@@ -18,6 +18,7 @@
                         </div>
                         <h3 class="mb-0 mt-2 text-black text-center">{{ strtoupper($comic['series']) }}</h3>
                         <p>PRICE: {{ $comic['price'] }}</p>
+                        <p>TYpe: {{ $comic['type'] }}</p>
                         <a class="text-decoration-none text-center shadow" href="{{ route('comics.show', $comic['id']) }}">
                             <button type="button" class="btn btn-primary shadow">More Information</button>
                         </a>

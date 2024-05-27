@@ -18,7 +18,10 @@ Route::get('/', function () {
     return view('home');
 })->name('home');
 
-Route::resource('Controllers', ComicController::class);
+Route::resource('/comics', ComicController::class);
+
+
+
 
 
 Route::get('/movies', function () {

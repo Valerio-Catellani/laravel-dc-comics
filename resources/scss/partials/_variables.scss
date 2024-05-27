@@ -1,6 +1,5 @@
 $text-color: red;
 
-
 $navColor: rgb(12, 124, 236);
 $navInactive: black;
 $nav-background: white;
@@ -9,8 +8,12 @@ $button-hover: rgb(18, 140, 253);
 $text-merch: white;
 $text-menu: grey;
 $contact-background: #303030;
-
-
+$element-color: beige;
+$background-gradient: linear-gradient(
+    356deg,
+    rgba(194, 196, 201, 1) 0%,
+    $merchant-background 67%
+);
 
 $font-main: "Bebas Neue", sans-serif;
 $font-menu: "Roboto", sans-serif;

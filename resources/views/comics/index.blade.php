@@ -11,7 +11,7 @@
             <div role="button" class="mine-button text-center py-2 m-4 align-self-center" id="current-series">CURRENT SERIES
             </div>
             <div class="card-container row gap-3 py-1 justify-content-center ">
-                @foreach ($data['comics'] as $comic)
+                @foreach ($comics as $comic)
                     <div class="card p-1 col-5 col-md-6 col-lg-3 col-xl-2 mb-2 " role="button">
                         <div class="img-container">
                             <img class="img-fluid" src="{{ $comic['thumb'] }}" alt="{{ $comic['series'] }}">
@@ -21,7 +21,11 @@
                     </div>
                 @endforeach
             </div>
-            <div role="button" class="mine-button text-center py-2 m-4 align-self-center" id="load-more">LOAD MORE</div>
+            <a href="{{ route('comics.create') }}" class="text-white text-decoration-none">
+                <div role="button" class="mine-button text-center py-2 m-4 align-self-center" id="load-more">Add a new
+                    Comic
+                </div>
+            </a>
         </div>
     </main>
 

@@ -1,4 +1,5 @@
 @use "./partials/variables" as *;
+@use "./partials/hype_utility" as *;
 
 $fa-font-path: "../webfonts" !default;
 
@@ -16,6 +17,14 @@ $fa-font-path: "../webfonts" !default;
 body {
     font-family: $font-main;
     height: 100vh;
+}
+
+.mine-element-color {
+    background-color: $element-color;
+}
+
+.mine-background-color {
+    background-image: $background-gradient;
 }
 
 header {
@@ -72,60 +81,6 @@ header {
         color: $navColor;
     }
 }
-
-main {
-    background-color: $contact-background;
-
-    .jumbotron-container {
-        height: 400px;
-        overflow: hidden;
-
-        @media screen and (max-width: 768px) {
-            height: 200px;
-        }
-    }
-
-    #current-series {
-        transform: translateY(-50px);
-        font-size: 2rem;
-    }
-
-    .card-container {
-        .card {
-            min-width: 200px;
-            max-width: 200px;
-            background-color: transparent;
-            border: none;
-            box-shadow: 1px 1px 5px 1px rgba(255, 255, 255, 0.5);
-            background-color: beige;
-        }
-
-        .img-container {
-            aspect-ratio: 1 / 1;
-            overflow: hidden;
-        }
-
-        h3 {
-            background-color: transparent;
-            color: $text-merch;
-            height: 100px;
-        }
-    }
-
-    #load-more {
-        margin: 20px auto 40px !important;
-    }
-
-    .mine-button {
-        background-color: $navColor;
-        width: 200px;
-
-        &:hover {
-            background-color: $button-hover;
-        }
-    }
-}
-
 footer {
     #merchandising {
         background-color: $merchant-background;
@@ -214,4 +169,67 @@ footer {
             }
         }
     }
+}
+
+/* Comics */
+main {
+    background-color: $contact-background;
+    min-height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+
+    .jumbotron-container {
+        height: 400px;
+        overflow: hidden;
+
+        @media screen and (max-width: 768px) {
+            height: 200px;
+        }
+    }
+
+    #current-series {
+        transform: translateY(-50px);
+        font-size: 2rem;
+    }
+
+    .card-container {
+        .card {
+            min-width: 200px;
+            max-width: 200px;
+            background-color: transparent;
+            border: none;
+            box-shadow: 1px 1px 5px 1px rgba(255, 255, 255, 0.5);
+            background-color: $element-color;
+        }
+
+        .img-container {
+            aspect-ratio: 1 / 1;
+            overflow: hidden;
+        }
+
+        h3 {
+            background-color: transparent;
+            color: $text-merch;
+            height: 100px;
+        }
+    }
+
+    #load-more {
+        margin: 20px auto 40px !important;
+    }
+
+    .mine-button {
+        background-color: $navColor;
+        width: 200px;
+
+        &:hover {
+            background-color: $button-hover;
+        }
+    }
+}
+
+/* create-comic */
+#create-comic {
+    padding-top: 200px !important;
 }

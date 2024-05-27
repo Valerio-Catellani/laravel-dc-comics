@@ -7,13 +7,18 @@
         },
         {
             "id": 2,
-            "name": "aboutUs",
-            "url": "aboutUs"
+            "name": "comics",
+            "url": "comics.index"
         },
         {
             "id": 3,
             "name": "movies",
             "url": "movies"
+        },
+        {
+            "id": 4,
+            "name": "aboutUs",
+            "url": "aboutUs"
         }
     ],
     "footerMenu": {

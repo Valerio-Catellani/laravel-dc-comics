@@ -23,6 +23,10 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        $data = [
+            'navMenuLinks' => json_decode(file_get_contents(__DIR__ . "/../../database/seeders/mydb.json"), true)['headerMenu'],
+            'footerMenuLinks' => json_decode(file_get_contents(__DIR__ . "/../../database/seeders/mydb.json"), true)['footerMenu']
+        ];
+        view()->share(compact('data'));
     }
 }

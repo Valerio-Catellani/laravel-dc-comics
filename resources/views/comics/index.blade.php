@@ -1,10 +1,9 @@
 @extends('layouts.app')
 
-@section('title', 'Home')
+@section('title', 'Comics')
 
 @section('content')
-    <main>ciao</main>
-    {{-- <main class="text-white d-flex flex-column align-items-center justify-content-center ">
+    <main class="text-white d-flex flex-column align-items-center justify-content-center ">
         <div class="jumbotron-container">
             <img class="vw-100 img-fluid" src="{{ Vite::asset('resources/img/jumbotron.jpg') }}" alt="Jumbotron">
         </div>
@@ -24,6 +23,6 @@
             </div>
             <div role="button" class="mine-button text-center py-2 m-4 align-self-center" id="load-more">LOAD MORE</div>
         </div>
-    </main> --}}
+    </main>
 
 @endsection

@@ -1,4 +1,4 @@
-@use './partials/variables' as *;
+@use "./partials/variables" as *;
 
 $fa-font-path: "../webfonts" !default;
 
@@ -7,8 +7,211 @@ $fa-font-path: "../webfonts" !default;
 @import "~@fortawesome/fontawesome-free/scss/solid";
 @import "~@fortawesome/fontawesome-free/scss/brands";
 
-@import '~bootstrap/scss/bootstrap';
+@import "~bootstrap/scss/bootstrap";
 
-h1 {
-    color: $text-color;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anek+Tamil:wght@100..800&family=Arbutus&family=Madimi+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Rajdhani:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anek+Tamil:wght@100..800&family=Arbutus&family=Bebas+Neue&family=Madimi+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Rajdhani:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+body {
+    font-family: $font-main;
+    height: 100vh;
+}
+
+header {
+    height: 80px;
+    background-color: $nav-background;
+    flex-wrap: nowrap;
+
+    #img-container {
+        min-width: 100px;
+    }
+
+    ul {
+        list-style: none;
+
+        @media screen and (max-width: 1200px) {
+            display: none !important;
+        }
+
+        li {
+            margin: 0 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+            padding: 0;
+            position: relative;
+
+            .underline-bar {
+                display: block;
+                position: absolute;
+                margin-left: 0 !important;
+                bottom: 0;
+                height: 7px;
+                width: 100%;
+                background-color: $navColor;
+                margin-left: 1rem;
+            }
+
+            &:hover {
+                & a {
+                    color: $navColor;
+                }
+            }
+
+            a {
+                margin: 0;
+                text-decoration: none;
+                color: black;
+            }
+        }
+    }
+
+    .color {
+        color: $navColor;
+    }
+}
+
+main {
+    background-color: $contact-background;
+
+    .jumbotron-container {
+        height: 400px;
+        overflow: hidden;
+
+        @media screen and (max-width: 768px) {
+            height: 200px;
+        }
+    }
+
+    #current-series {
+        transform: translateY(-50px);
+        font-size: 2rem;
+    }
+
+    .card-container {
+        .card {
+            min-width: 200px;
+            max-width: 200px;
+            background-color: transparent;
+            border: none;
+            box-shadow: 1px 1px 5px 1px rgba(255, 255, 255, 0.5);
+            background-color: beige;
+        }
+
+        .img-container {
+            aspect-ratio: 1 / 1;
+            overflow: hidden;
+        }
+
+        h3 {
+            background-color: transparent;
+            color: $text-merch;
+            height: 100px;
+        }
+    }
+
+    #load-more {
+        margin: 20px auto 40px !important;
+    }
+
+    .mine-button {
+        background-color: $navColor;
+        width: 200px;
+
+        &:hover {
+            background-color: $button-hover;
+        }
+    }
+}
+
+footer {
+    #merchandising {
+        background-color: $merchant-background;
+
+        .merch-container {
+            color: $text-merch;
+            min-width: 200px;
+
+            .img-container {
+                width: 60px;
+                height: 60px;
+                min-width: 60px;
+                min-height: 60px;
+            }
+
+            h5 {
+                font-size: 1rem;
+                padding-right: 10px;
+                margin-bottom: 0;
+                cursor: pointer;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    #menu {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        .mine-container {
+            background-image: url("/images/dc-logo-bg.png");
+            background-position: right;
+            background-repeat: no-repeat;
+            height: 500px;
+            padding: 30px 0;
+
+            ul {
+                list-style: none;
+                align-self: flex-start;
+
+                h3 {
+                    color: $text-merch;
+                }
+                li {
+                    a {
+                        color: $text-menu;
+                        text-decoration: none;
+                        font-family: $font-menu;
+                        font-size: 0.8rem;
+
+                        &:hover {
+                            color: $navColor;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #contacts {
+        background-color: $contact-background;
+
+        button {
+            border: $navColor 2px solid;
+            background-color: transparent;
+            font-size: 2rem;
+            color: $text-merch;
+            padding: 10px 20px;
+
+            &:hover {
+                background-color: $navColor;
+            }
+        }
+
+        .contact-container {
+            a:hover {
+                opacity: 80%;
+            }
+
+            h4 {
+                color: $navColor;
+            }
+        }
+    }
 }

@@ -27,6 +27,20 @@ body {
     background-image: $background-gradient;
 }
 
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(
+        255,
+        255,
+        255,
+        0.5
+    ); /* Cambia i valori RGBA per personalizzare il colore e l'opacità */
+    border-radius: 6px;
+}
+
 header {
     height: 80px;
     background-color: $nav-background;
@@ -171,13 +185,18 @@ footer {
     }
 }
 
-/* Comics */
+/*all Comics */
+#all-comics {
+    padding-top: 0px !important;
+}
+
 main {
     background-color: $contact-background;
     min-height: 100vh;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
+    padding-top: 150px !important;
 
     .jumbotron-container {
         height: 400px;
@@ -231,5 +250,13 @@ main {
 
 /* create-comic */
 #create-comic {
-    padding-top: 200px !important;
+}
+
+/* comic-details */
+#comic-details {
+    p {
+        max-height: 300px;
+        overflow: hidden;
+        overflow-y: auto;
+    }
 }

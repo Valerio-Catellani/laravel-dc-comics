@@ -3,7 +3,7 @@
 @section('title', 'Comics')
 
 @section('content')
-    <main class="text-white d-flex flex-column align-items-center justify-content-center ">
+    <main id="all-comics" class="text-white d-flex flex-column align-items-center justify-content-center ">
         <div class="jumbotron-container">
             <img class="vw-100 img-fluid" src="{{ Vite::asset('resources/img/jumbotron.jpg') }}" alt="Jumbotron">
         </div>
@@ -18,6 +18,9 @@
                         </div>
                         <h3 class="mb-0 mt-2 text-black text-center">{{ strtoupper($comic['series']) }}</h3>
                         <p>PRICE: {{ $comic['price'] }}</p>
+                        <a class="text-decoration-none text-center shadow" href="{{ route('comics.show', $comic['id']) }}">
+                            <button type="button" class="btn btn-primary shadow">More Information</button>
+                        </a>
                     </div>
                 @endforeach
             </div>

@@ -36,7 +36,12 @@ class ComicController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $form_data = $request->all();
+        $form_data["price"] = '$' . $form_data["price"];
+        $new_comic = new Comic();
+        $new_comic->fill($form_data);
+        $new_comic->save();
+        return redirect()->route("comics.index");
     }
 
     /**
@@ -47,7 +52,8 @@ class ComicController extends Controller
      */
     public function show(Comic $comic)
     {
-        //
+        $comic = Comic::findOrFail($comic->id);
+        return view("comics.show", compact("comic"));
     }
 
     /**
@@ -81,6 +87,9 @@ class ComicController extends Controller
      */
     public function destroy(Comic $comic)
     {
-        //
+        $comic->delete();
+
+        // Opzionalmente, puoi aggiungere un messaggio di successo e reindirizzare a una pagina specifica
+        return redirect()->route('comics.index')->with('success', 'Comic eliminato con successo');
     }
 }

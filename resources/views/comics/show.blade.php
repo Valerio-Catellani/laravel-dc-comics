@@ -4,7 +4,7 @@
 
 @section('content')
     <main id="comic-details" style="background-image: url('{{ Vite::asset('resources/img/dc-heroes.jpg') }}')" class="pb-5">
-        <div class="container mine-background-color rounded-5 hype-shadow-white p-2 mb-5">
+        <div class="container mine-background-color rounded-5 hype-shadow-white p-2 pb-4 mb-5">
             <h1 class="text-center hype-text-shadow text-white display-3 fw-bolder">{{ $comic['series'] }}</h1>
             <span class="fs-3 text-center d-block"><?php echo $comic->vote_tmp; ?></span>
             <div class="container">
@@ -12,7 +12,7 @@
                     <div class="col-4">
                         <img class="img-fluid w-100" src="{{ $comic->thumb }}" alt="{{ $comic->series }}">
                     </div>
-                    <div class="col-8">
+                    <div class="col-8 d-flex flex-column">
                         <h4 class="mb-1">Autore</h4>
                         <h6>{{ $comic->author }}</h6>
                         <h4 class="mb-1">Descrizione</h4>
@@ -29,16 +29,22 @@
                         <h6>
                             {{ $comic->total_votes }}
                         </h6>
-                        <div class="d-flex justify-content-center gap-5">
-                            <a href="{{ route('comics.edit', $comic->id) }}" class="w-25">
-                                <button type="submit" class="btn btn-warning shadow w-100">Edit</button>
+                        <div class="d-flex justify-content-center align-items-center gap-5 mt-auto">
+                            <a href="{{ route('comics.index') }}">
+                                <i role="button" type="submit"
+                                    class="fa-solid fa-arrow-left fs-1 text-primary hype-text-shadow hype-hover-size"></i>
                             </a>
-                            <form id="delete-form" action="{{ route('comics.destroy', $comic->id) }}" method="POST"
-                                class="w-25">
+                            <a href="{{ route('comics.edit', $comic->id) }}">
+                                <i role="button" type="submit"
+                                    class="fa-solid fa-pen-to-square fs-1 text-warning hype-text-shadow hype-hover-size"></i>
+                            </a>
+                            <form id="delete-form" action="{{ route('comics.destroy', $comic->id) }}" method="POST">
                                 @csrf
                                 @method('DELETE')
-                                <button id="element-delete" type="submit"
-                                    class="btn btn-danger shadow w-100">Delete</button>
+                                <button id="element-delete" class="my-button text-danger hype-text-shadow fs-1"
+                                    type="submit">
+                                    <i class="fa-solid fa-trash-can "></i>
+                                </button>
                             </form>
                         </div>
                     </div>

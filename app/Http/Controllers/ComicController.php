@@ -83,12 +83,10 @@ class ComicController extends Controller
     {
         $comic_to_change = Comic::findOrFail($id);
         $form_data = $request->all();
-        $comic_to_change->price = '$' . $form_data["price"];
-        $comic_to_change->series = $form_data["series"];
-        $comic_to_change->thumb = $form_data["thumb"];
-        $comic_to_change->type = $form_data["type"];
+        $form_data["price"] = '$' . $form_data["price"];
+        $comic_to_change->fill($form_data);
         $comic_to_change->update();
-        return redirect()->route("comics.show", $comic_to_change->$id);
+        return redirect()->route("comics.show", $comic_to_change->id);
     }
 
     /**

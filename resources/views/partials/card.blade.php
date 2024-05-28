@@ -12,8 +12,8 @@
         <a class="text-decoration-none text-center text-secondary" href="{{ route('comics.show', $comic->id) }}">
             <i role="button" class="fa-solid fa-circle-info fs-2  hype-hover-size"></i>
         </a>
-        <a class="text-decoration-none text-center text-secondary" href="{{ route('comics.edit', $comic->id) }}">
-            <i role="button" class="fa-solid fa-pen-to-square fs-2 hype-hover-size"></i>
+        <a class="text-decoration-none text-center text-warning" href="{{ route('comics.edit', $comic->id) }}">
+            <i role="button" class="fa-solid fa-pen-to-square fs-2 hype-hover-size hype-text-shadow"></i>
         </a>
     </div>
 </div>

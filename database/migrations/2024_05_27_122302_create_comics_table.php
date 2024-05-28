@@ -19,6 +19,13 @@ return new class extends Migration
             $table->string('thumb', 255);
             $table->string('price', 255);
             $table->string('type', 255);
+            $table->string('publisher', 255);
+            $table->string('release_date', 255);
+            $table->string('author', 255);
+            $table->text('description')->nullable();
+            $table->integer('pages')->nullable();
+            $table->float('rating', 4, 2)->nullable();
+            $table->integer('total_votes')->nullable();
             $table->timestamps();
         });
     }

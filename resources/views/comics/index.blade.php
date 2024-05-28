@@ -10,19 +10,14 @@
         <div class="container">
             <div role="button" class="mine-button text-center py-2 m-4 align-self-center" id="current-series">CURRENT SERIES
             </div>
+            @if (session()->has('message'))
+                <div class="alert alert-success">
+                    {{ session()->get('message') }}
+                </div>
+            @endif
             <div class="card-container row gap-3 py-1 justify-content-center ">
                 @foreach ($comics as $comic)
-                    <div class="card p-1 col-5 col-md-6 col-lg-3 col-xl-2 mb-2 " role="button">
-                        <div class="img-container">
-                            <img class="img-fluid" src="{{ $comic->thumb }}" alt="{{ $comic->series }}">
-                        </div>
-                        <h3 class="mb-0 mt-2 text-black text-center">{{ strtoupper($comic->series) }}</h3>
-                        <p>PRICE: {{ $comic->price }}</p>
-                        <p>TYpe: {{ $comic->type }}</p>
-                        <a class="text-decoration-none text-center shadow" href="{{ route('comics.show', $comic->id) }}">
-                            <button type="button" class="btn btn-primary shadow">More Information</button>
-                        </a>
-                    </div>
+                    @include('partials.card', $comic)
                 @endforeach
             </div>
             <a href="{{ route('comics.create') }}" class="text-white text-decoration-none">

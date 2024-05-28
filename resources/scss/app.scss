@@ -221,8 +221,8 @@ main {
             box-shadow: 1px 1px 5px 1px rgba(255, 255, 255, 0.5);
             background-color: $element-color;
             &:hover {
-                transform: translateY(-5px);
-                transition: transform 0.3s;
+                transform: translateY(10px);
+                transition: transform 0.5s;
             }
         }
 
@@ -259,7 +259,9 @@ main {
 /* comic-details */
 #comic-details {
     p {
-        max-height: 300px;
+        background-color: beige;
+        padding: 10px;
+        max-height: 200px;
         overflow: hidden;
         overflow-y: auto;
     }

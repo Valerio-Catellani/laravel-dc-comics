@@ -31,7 +31,7 @@
                 <br>
                 <button type="submit" class="btn btn-primary mt-3">Crea</button>
             </form>
+        </div>
     </main>
-    </div>
 
 @endsection

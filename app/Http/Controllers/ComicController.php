@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Comic;
 use Illuminate\Http\Request;
+use App\Functions\Helpers as Help;
 
 class ComicController extends Controller
 {
@@ -15,6 +16,9 @@ class ComicController extends Controller
     public function index()
     {
         $comics = Comic::all();
+        foreach ($comics as $comic) {
+            $comic->vote_tmp = Help::getStars($comic->rating);
+        }
         return view("comics.index", compact("comics"));
     }
 
@@ -53,6 +57,7 @@ class ComicController extends Controller
     public function show(Comic $comic)
     {
         // $comic = Comic::findOrFail($comic->id);
+        $comic->vote_tmp = Help::getStars($comic->rating);
         return view("comics.show", compact("comic"));
     }
 
@@ -64,7 +69,7 @@ class ComicController extends Controller
      */
     public function edit(Comic $comic)
     {
-        return view("comics.edit");
+        return view("comics.edit", compact("comic"));
     }
 
     /**
@@ -74,9 +79,16 @@ class ComicController extends Controller
      * @param  \App\Models\Comic  $comic
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Comic $comic)
+    public function update(Request $request, $id)
     {
-        //
+        $comic_to_change = Comic::findOrFail($id);
+        $form_data = $request->all();
+        $comic_to_change->price = '$' . $form_data["price"];
+        $comic_to_change->series = $form_data["series"];
+        $comic_to_change->thumb = $form_data["thumb"];
+        $comic_to_change->type = $form_data["type"];
+        $comic_to_change->update();
+        return redirect()->route("comics.show", $comic_to_change->$id);
     }
 
     /**
@@ -90,6 +102,6 @@ class ComicController extends Controller
         $comic->delete();
 
         // Opzionalmente, puoi aggiungere un messaggio di successo e reindirizzare a una pagina specifica
-        return redirect()->route('comics.index')->with('success', 'Comic eliminato con successo');
+        return redirect()->route('comics.index')->with('message', "Comic (id:{$comic->id}): {$comic->title} eliminato con successo");
     }
 }

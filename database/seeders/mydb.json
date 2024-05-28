@@ -199,73 +199,157 @@
             "thumb": "https://www.coverbrowser.com/image/action-comics/1-1.jpg",
             "price": "$19.99",
             "series": "Action Comics",
-            "type": "comic book"
+            "type": "comic book",
+            "publisher": "DC Comics",
+            "release_date": "1938-06-01",
+            "author": "Jerry Siegel",
+            "pages": 64,
+            "rating": 3.8,
+            "total_votes": 2500,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vehicula augue vel lorem efficitur, et laoreet ligula gravida. Curabitur pharetra ultricies turpis, vel tincidunt eros dictum nec. Suspendisse potenti. Aenean nec odio id nisl dapibus vehicula. Maecenas egestas justo at arcu cursus, vel dictum ipsum euismod. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur convallis lectus non turpis tempus, ac convallis nisl consequat. Aenean eget enim vel arcu tincidunt fringilla. Fusce interdum enim vel enim vehicula, in tincidunt tortor sagittis. In laoreet libero quis semper cursus. Nulla facilisi. Integer malesuada elit ut quam sodales, et bibendum elit tincidunt. Nam convallis massa a mauris tincidunt, ut sagittis libero laoreet. Integer eget elit in risus posuere mollis. Morbi vestibulum libero sed risus euismod, a porttitor lacus viverra. Suspendisse potenti. Pellentesque quis magna libero. Mauris pretium quam sed suscipit consectetur. Ut nec ultrices ligula, vel tristique sapien. Nulla facilisi. Praesent vestibulum ex non interdum posuere. Integer malesuada velit ac risus facilisis varius. Integer consectetur magna sed neque posuere lacinia. Integer a risus eget libero pharetra consectetur id at orci."
         },
         {
             "thumb": "https://www.panini.it/media/catalog/product/cache/a5b5dd3adfe0d321084804c738f29601/M/1/M1BLLA015ISBN_0.jpg",
             "price": "$3.99",
             "series": "American Vampire 1976",
-            "type": "comic book"
+            "type": "comic book",
+            "publisher": "DC Comics",
+            "release_date": "2020-10-06",
+            "author": "Scott Snyder",
+            "pages": 32,
+            "rating": 2.5,
+            "total_votes": 1500,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vehicula augue vel lorem efficitur, et laoreet ligula gravida. Curabitur pharetra ultricies turpis, vel tincidunt eros dictum nec. Suspendisse potenti. Aenean nec odio id nisl dapibus vehicula. Maecenas egestas justo at arcu cursus, vel dictum ipsum euismod. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur convallis lectus non turpis tempus, ac convallis nisl consequat. Aenean eget enim vel arcu tincidunt fringilla. Fusce interdum enim vel enim vehicula, in tincidunt tortor sagittis. In laoreet libero quis semper cursus. Nulla facilisi. Integer malesuada elit ut quam sodales, et bibendum elit tincidunt. Nam convallis massa a mauris tincidunt, ut sagittis libero laoreet. Integer eget elit in risus posuere mollis. Morbi vestibulum libero sed risus euismod, a porttitor lacus viverra. Suspendisse potenti. Pellentesque quis magna libero. Mauris pretium quam sed suscipit consectetur. Ut nec ultrices ligula, vel tristique sapien. Nulla facilisi. Praesent vestibulum ex non interdum posuere. Integer malesuada velit ac risus facilisis varius. Integer consectetur magna sed neque posuere lacinia. Integer a risus eget libero pharetra consectetur id at orci."
         },
         {
             "thumb": "https://media.wired.com/photos/593384dad80dd005b42b2817/master/w_2560%2Cc_limit/Aquaman-16.jpg",
             "price": "$16.99",
             "series": "Aquaman",
-            "type": "graphic novel"
+            "type": "graphic novel",
+            "publisher": "DC Comics",
+            "release_date": "2016-12-21",
+            "author": "Dan Abnett",
+            "pages": 144,
+            "rating": 3.6,
+            "total_votes": 1800,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vehicula augue vel lorem efficitur, et laoreet ligula gravida. Curabitur pharetra ultricies turpis, vel tincidunt eros dictum nec. Suspendisse potenti. Aenean nec odio id nisl dapibus vehicula. Maecenas egestas justo at arcu cursus, vel dictum ipsum euismod. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur convallis lectus non turpis tempus, ac convallis nisl consequat. Aenean eget enim vel arcu tincidunt fringilla. Fusce interdum enim vel enim vehicula, in tincidunt tortor sagittis. In laoreet libero quis semper cursus. Nulla facilisi. Integer malesuada elit ut quam sodales, et bibendum elit tincidunt. Nam convallis massa a mauris tincidunt, ut sagittis libero laoreet. Integer eget elit in risus posuere mollis. Morbi vestibulum libero sed risus euismod, a porttitor lacus viverra. Suspendisse potenti. Pellentesque quis magna libero. Mauris pretium quam sed suscipit consectetur. Ut nec ultrices ligula, vel tristique sapien. Nulla facilisi. Praesent vestibulum ex non interdum posuere. Integer malesuada velit ac risus facilisis varius. Integer consectetur magna sed neque posuere lacinia. Integer a risus eget libero pharetra consectetur id at orci."
         },
         {
             "thumb": "https://d29xot63vimef3.cloudfront.net/image/batgirl/1-1.jpg",
             "price": "$2.99",
             "series": "Batgirl",
-            "type": "comic book"
+            "type": "comic book",
+            "publisher": "DC Comics",
+            "release_date": "2000-04-01",
+            "author": "Kelley Puckett",
+            "pages": 32,
+            "rating": 4.4,
+            "total_votes": 1300,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vehicula augue vel lorem efficitur, et laoreet ligula gravida. Curabitur pharetra ultricies turpis, vel tincidunt eros dictum nec. Suspendisse potenti. Aenean nec odio id nisl dapibus vehicula. Maecenas egestas justo at arcu cursus, vel dictum ipsum euismod. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur convallis lectus non turpis tempus, ac convallis nisl consequat. Aenean eget enim vel arcu tincidunt fringilla. Fusce interdum enim vel enim vehicula, in tincidunt tortor sagittis. In laoreet libero quis semper cursus. Nulla facilisi. Integer malesuada elit ut quam sodales, et bibendum elit tincidunt. Nam convallis massa a mauris tincidunt, ut sagittis libero laoreet. Integer eget elit in risus posuere mollis. Morbi vestibulum libero sed risus euismod, a porttitor lacus viverra. Suspendisse potenti. Pellentesque quis magna libero. Mauris pretium quam sed suscipit consectetur. Ut nec ultrices ligula, vel tristique sapien. Nulla facilisi. Praesent vestibulum ex non interdum posuere. Integer malesuada velit ac risus facilisis varius. Integer consectetur magna sed neque posuere lacinia. Integer a risus eget libero pharetra consectetur id at orci."
         },
         {
             "thumb": "https://static.posters.cz/image/750/locandine-film-in-plexiglass-batman-prowl-comic-cover-i69653.jpg",
             "price": "$3.99",
             "series": "Batman",
-            "type": "comic book"
+            "type": "comic book",
+            "publisher": "DC Comics",
+            "release_date": "1940-04-25",
+            "author": "Bill Finger",
+            "pages": 64,
+            "rating": 5.0,
+            "total_votes": 3000,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vehicula augue vel lorem efficitur, et laoreet ligula gravida. Curabitur pharetra ultricies turpis, vel tincidunt eros dictum nec. Suspendisse potenti. Aenean nec odio id nisl dapibus vehicula. Maecenas egestas justo at arcu cursus, vel dictum ipsum euismod. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur convallis lectus non turpis tempus, ac convallis nisl consequat. Aenean eget enim vel arcu tincidunt fringilla. Fusce interdum enim vel enim vehicula, in tincidunt tortor sagittis. In laoreet libero quis semper cursus. Nulla facilisi. Integer malesuada elit ut quam sodales, et bibendum elit tincidunt. Nam convallis massa a mauris tincidunt, ut sagittis libero laoreet. Integer eget elit in risus posuere mollis. Morbi vestibulum libero sed risus euismod, a porttitor lacus viverra. Suspendisse potenti. Pellentesque quis magna libero. Mauris pretium quam sed suscipit consectetur. Ut nec ultrices ligula, vel tristique sapien. Nulla facilisi. Praesent vestibulum ex non interdum posuere. Integer malesuada velit ac risus facilisis varius. Integer consectetur magna sed neque posuere lacinia. Integer a risus eget libero pharetra consectetur id at orci."
         },
         {
             "thumb": "https://static.wikia.nocookie.net/marvel_dc/images/5/50/Batman_Beyond_v.1_1.jpg",
             "price": "$2.99",
             "series": "Batman Beyond",
-            "type": "comic book"
+            "type": "comic book",
+            "publisher": "DC Comics",
+            "release_date": "1999-03-01",
+            "author": "Hilary Bader",
+            "pages": 32,
+            "rating": 3.3,
+            "total_votes": 1200,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vehicula augue vel lorem efficitur, et laoreet ligula gravida. Curabitur pharetra ultricies turpis, vel tincidunt eros dictum nec. Suspendisse potenti. Aenean nec odio id nisl dapibus vehicula. Maecenas egestas justo at arcu cursus, vel dictum ipsum euismod. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur convallis lectus non turpis tempus, ac convallis nisl consequat. Aenean eget enim vel arcu tincidunt fringilla. Fusce interdum enim vel enim vehicula, in tincidunt tortor sagittis. In laoreet libero quis semper cursus. Nulla facilisi. Integer malesuada elit ut quam sodales, et bibendum elit tincidunt. Nam convallis massa a mauris tincidunt, ut sagittis libero laoreet. Integer eget elit in risus posuere mollis. Morbi vestibulum libero sed risus euismod, a porttitor lacus viverra. Suspendisse potenti. Pellentesque quis magna libero. Mauris pretium quam sed suscipit consectetur. Ut nec ultrices ligula, vel tristique sapien. Nulla facilisi. Praesent vestibulum ex non interdum posuere. Integer malesuada velit ac risus facilisis varius. Integer consectetur magna sed neque posuere lacinia. Integer a risus eget libero pharetra consectetur id at orci."
         },
         {
             "thumb": "https://static.wikia.nocookie.net/marvel_dc/images/0/0d/Batman_Superman_Vol_1_1.jpg",
             "price": "$3.99",
             "series": "Batman/Superman",
-            "type": "comic book"
+            "type": "comic book",
+            "publisher": "DC Comics",
+            "release_date": "2013-06-26",
+            "author": "Greg Pak",
+            "pages": 40,
+            "rating": 4.7,
+            "total_votes": 1700,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vehicula augue vel lorem efficitur, et laoreet ligula gravida. Curabitur pharetra ultricies turpis, vel tincidunt eros dictum nec. Suspendisse potenti. Aenean nec odio id nisl dapibus vehicula. Maecenas egestas justo at arcu cursus, vel dictum ipsum euismod. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur convallis lectus non turpis tempus, ac convallis nisl consequat. Aenean eget enim vel arcu tincidunt fringilla. Fusce interdum enim vel enim vehicula, in tincidunt tortor sagittis. In laoreet libero quis semper cursus. Nulla facilisi. Integer malesuada elit ut quam sodales, et bibendum elit tincidunt. Nam convallis massa a mauris tincidunt, ut sagittis libero laoreet. Integer eget elit in risus posuere mollis. Morbi vestibulum libero sed risus euismod, a porttitor lacus viverra. Suspendisse potenti. Pellentesque quis magna libero. Mauris pretium quam sed suscipit consectetur. Ut nec ultrices ligula, vel tristique sapien. Nulla facilisi. Praesent vestibulum ex non interdum posuere. Integer malesuada velit ac risus facilisis varius. Integer consectetur magna sed neque posuere lacinia. Integer a risus eget libero pharetra consectetur id at orci."
         },
         {
             "thumb": "https://static.wikia.nocookie.net/marvel_dc/images/c/cf/Batman_Superman_Annual_Vol_2_1.jpg",
             "price": "$4.99",
             "series": "Batman/Superman Annual",
-            "type": "comic book"
+            "type": "comic book",
+            "publisher": "DC Comics",
+            "release_date": "2014-10-29",
+            "author": "Greg Pak",
+            "pages": 48,
+            "rating": 1.6,
+            "total_votes": 1600,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vehicula augue vel lorem efficitur, et laoreet ligula gravida. Curabitur pharetra ultricies turpis, vel tincidunt eros dictum nec. Suspendisse potenti. Aenean nec odio id nisl dapibus vehicula. Maecenas egestas justo at arcu cursus, vel dictum ipsum euismod. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur convallis lectus non turpis tempus, ac convallis nisl consequat. Aenean eget enim vel arcu tincidunt fringilla. Fusce interdum enim vel enim vehicula, in tincidunt tortor sagittis. In laoreet libero quis semper cursus. Nulla facilisi. Integer malesuada elit ut quam sodales, et bibendum elit tincidunt. Nam convallis massa a mauris tincidunt, ut sagittis libero laoreet. Integer eget elit in risus posuere mollis. Morbi vestibulum libero sed risus euismod, a porttitor lacus viverra. Suspendisse potenti. Pellentesque quis magna libero. Mauris pretium quam sed suscipit consectetur. Ut nec ultrices ligula, vel tristique sapien. Nulla facilisi. Praesent vestibulum ex non interdum posuere. Integer malesuada velit ac risus facilisis varius. Integer consectetur magna sed neque posuere lacinia. Integer a risus eget libero pharetra consectetur id at orci."
         },
         {
             "thumb": "https://static.wikia.nocookie.net/marvel_dc/images/5/54/Batman_The_Joker_War_Zone_Vol_1_1.jpg",
             "price": "$5.99",
             "series": "Batman: The Joker War Zone",
-            "type": "comic book"
+            "type": "comic book",
+            "publisher": "DC Comics",
+            "release_date": "2020-09-29",
+            "author": "James Tynion IV",
+            "pages": 56,
+            "rating": 2.8,
+            "total_votes": 2000,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vehicula augue vel lorem efficitur, et laoreet ligula gravida. Curabitur pharetra ultricies turpis, vel tincidunt eros dictum nec. Suspendisse potenti. Aenean nec odio id nisl dapibus vehicula. Maecenas egestas justo at arcu cursus, vel dictum ipsum euismod. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur convallis lectus non turpis tempus, ac convallis nisl consequat. Aenean eget enim vel arcu tincidunt fringilla. Fusce interdum enim vel enim vehicula, in tincidunt tortor sagittis. In laoreet libero quis semper cursus. Nulla facilisi. Integer malesuada elit ut quam sodales, et bibendum elit tincidunt. Nam convallis massa a mauris tincidunt, ut sagittis libero laoreet. Integer eget elit in risus posuere mollis. Morbi vestibulum libero sed risus euismod, a porttitor lacus viverra. Suspendisse potenti. Pellentesque quis magna libero. Mauris pretium quam sed suscipit consectetur. Ut nec ultrices ligula, vel tristique sapien. Nulla facilisi. Praesent vestibulum ex non interdum posuere. Integer malesuada velit ac risus facilisis varius. Integer consectetur magna sed neque posuere lacinia. Integer a risus eget libero pharetra consectetur id at orci."
         },
         {
             "thumb": "https://static.wikia.nocookie.net/marvel_dc/images/6/64/Batman_Three_Jokers_Collected.jpg",
             "price": "$6.99",
             "series": "Batman: Three Jokers",
-            "type": "comic book"
+            "type": "comic book",
+            "publisher": "DC Comics",
+            "release_date": "2020-10-27",
+            "author": "Geoff Johns",
+            "pages": 48,
+            "rating": 4.9,
+            "total_votes": 2200,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vehicula augue vel lorem efficitur, et laoreet ligula gravida. Curabitur pharetra ultricies turpis, vel tincidunt eros dictum nec. Suspendisse potenti. Aenean nec odio id nisl dapibus vehicula. Maecenas egestas justo at arcu cursus, vel dictum ipsum euismod. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur convallis lectus non turpis tempus, ac convallis nisl consequat. Aenean eget enim vel arcu tincidunt fringilla. Fusce interdum enim vel enim vehicula, in tincidunt tortor sagittis. In laoreet libero quis semper cursus. Nulla facilisi. Integer malesuada elit ut quam sodales, et bibendum elit tincidunt. Nam convallis massa a mauris tincidunt, ut sagittis libero laoreet. Integer eget elit in risus posuere mollis. Morbi vestibulum libero sed risus euismod, a porttitor lacus viverra. Suspendisse potenti. Pellentesque quis magna libero. Mauris pretium quam sed suscipit consectetur. Ut nec ultrices ligula, vel tristique sapien. Nulla facilisi. Praesent vestibulum ex non interdum posuere. Integer malesuada velit ac risus facilisis varius. Integer consectetur magna sed neque posuere lacinia. Integer a risus eget libero pharetra consectetur id at orci."
         },
         {
             "thumb": "https://static.wikia.nocookie.net/marvel_dc/images/f/f8/Batman_White_Knight_Presents_Harley_Quinn_Vol_1_1.jpg",
             "price": "$4.99",
             "series": "Batman: White Knight Presents: Harley Quinn",
-            "type": "comic book"
+            "type": "comic book",
+            "publisher": "DC Comics",
+            "release_date": "2020-10-20",
+            "author": "Katana Collins",
+            "pages": 32,
+            "rating": 2.7,
+            "total_votes": 1800,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vehicula augue vel lorem efficitur, et laoreet ligula gravida. Curabitur pharetra ultricies turpis, vel tincidunt eros dictum nec. Suspendisse potenti. Aenean nec odio id nisl dapibus vehicula. Maecenas egestas justo at arcu cursus, vel dictum ipsum euismod. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur convallis lectus non turpis tempus, ac convallis nisl consequat. Aenean eget enim vel arcu tincidunt fringilla. Fusce interdum enim vel enim vehicula, in tincidunt tortor sagittis. In laoreet libero quis semper cursus. Nulla facilisi. Integer malesuada elit ut quam sodales, et bibendum elit tincidunt. Nam convallis massa a mauris tincidunt, ut sagittis libero laoreet. Integer eget elit in risus posuere mollis. Morbi vestibulum libero sed risus euismod, a porttitor lacus viverra. Suspendisse potenti. Pellentesque quis magna libero. Mauris pretium quam sed suscipit consectetur. Ut nec ultrices ligula, vel tristique sapien. Nulla facilisi. Praesent vestibulum ex non interdum posuere. Integer malesuada velit ac risus facilisis varius. Integer consectetur magna sed neque posuere lacinia. Integer a risus eget libero pharetra consectetur id at orci."
         },
         {
             "thumb": "https://static.wikia.nocookie.net/marvel_dc/images/c/c8/Catwoman_Vol_2_1.jpg",
             "price": "$16.99",
             "series": "Catwoman",
-            "type": "graphic novel"
+            "type": "graphic novel",
+            "publisher": "DC Comics",
+            "release_date": "1993-08-01",
+            "author": "Jo Duffy",
+            "pages": 144,
+            "rating": 4.5,
+            "total_votes": 1600,
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vehicula augue vel lorem efficitur, et laoreet ligula gravida. Curabitur pharetra ultricies turpis, vel tincidunt eros dictum nec. Suspendisse potenti. Aenean nec odio id nisl dapibus vehicula. Maecenas egestas justo at arcu cursus, vel dictum ipsum euismod. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur convallis lectus non turpis tempus, ac convallis nisl consequat. Aenean eget enim vel arcu tincidunt fringilla. Fusce interdum enim vel enim vehicula, in tincidunt tortor sagittis. In laoreet libero quis semper cursus. Nulla facilisi. Integer malesuada elit ut quam sodales, et bibendum elit tincidunt. Nam convallis massa a mauris tincidunt, ut sagittis libero laoreet. Integer eget elit in risus posuere mollis. Morbi vestibulum libero sed risus euismod, a porttitor lacus viverra. Suspendisse potenti. Pellentesque quis magna libero. Mauris pretium quam sed suscipit consectetur. Ut nec ultrices ligula, vel tristique sapien. Nulla facilisi. Praesent vestibulum ex non interdum posuere. Integer malesuada velit ac risus facilisis varius. Integer consectetur magna sed neque posuere lacinia. Integer a risus eget libero pharetra consectetur id at orci."
         }
     ]
 }

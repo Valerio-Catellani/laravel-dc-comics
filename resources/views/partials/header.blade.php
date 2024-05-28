@@ -9,7 +9,7 @@
                     <li>
                         <a href="{{ route($menuVoice['url']) }}">{{ $menuVoice['name'] }}</a>
                         <div
-                            class="underline-bar {{ Route::currentRouteName() === $menuVoice['name'] ? '' : 'opacity-0' }}">
+                            class="underline-bar {{ Route::currentRouteName() === $menuVoice['url'] ? '' : 'opacity-0' }}">
                         </div>
                     </li>
                 @endforeach

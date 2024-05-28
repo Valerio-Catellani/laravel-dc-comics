@@ -52,7 +52,7 @@ class ComicController extends Controller
      */
     public function show(Comic $comic)
     {
-        $comic = Comic::findOrFail($comic->id);
+        // $comic = Comic::findOrFail($comic->id);
         return view("comics.show", compact("comic"));
     }
 
@@ -64,7 +64,7 @@ class ComicController extends Controller
      */
     public function edit(Comic $comic)
     {
-        //
+        return view("comics.edit");
     }
 
     /**

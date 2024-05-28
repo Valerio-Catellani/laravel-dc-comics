@@ -14,12 +14,12 @@
                 @foreach ($comics as $comic)
                     <div class="card p-1 col-5 col-md-6 col-lg-3 col-xl-2 mb-2 " role="button">
                         <div class="img-container">
-                            <img class="img-fluid" src="{{ $comic['thumb'] }}" alt="{{ $comic['series'] }}">
+                            <img class="img-fluid" src="{{ $comic->thumb }}" alt="{{ $comic->series }}">
                         </div>
-                        <h3 class="mb-0 mt-2 text-black text-center">{{ strtoupper($comic['series']) }}</h3>
-                        <p>PRICE: {{ $comic['price'] }}</p>
-                        <p>TYpe: {{ $comic['type'] }}</p>
-                        <a class="text-decoration-none text-center shadow" href="{{ route('comics.show', $comic['id']) }}">
+                        <h3 class="mb-0 mt-2 text-black text-center">{{ strtoupper($comic->series) }}</h3>
+                        <p>PRICE: {{ $comic->price }}</p>
+                        <p>TYpe: {{ $comic->type }}</p>
+                        <a class="text-decoration-none text-center shadow" href="{{ route('comics.show', $comic->id) }}">
                             <button type="button" class="btn btn-primary shadow">More Information</button>
                         </a>
                     </div>

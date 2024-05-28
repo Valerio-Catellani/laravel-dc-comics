@@ -9,7 +9,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-4">
-                        <img class="img-fluid w-100" src="{{ $comic['thumb'] }}" alt="{{ $comic['series'] }}">
+                        <img class="img-fluid w-100" src="{{ $comic->thumb }}" alt="{{ $comic->series }}">
                     </div>
                     <div class="col-8">
                         <h2>Descrizione</h2>
@@ -54,9 +54,9 @@
                             quod eaque. Ipsum aperiam suscipit fugiat accusantium voluptatum? Eum facilis molestias iusto!
                         </p>
                         <h3>Prezzo</h3>
-                        <h6>{{ $comic['price'] }}</h6>
+                        <h6>{{ $comic->price }}</h6>
                         <h3>Serie</h3>
-                        <h6>{{ $comic['series'] }}</h6>
+                        <h6>{{ $comic->series }}</h6>
                         <h3>Numero di pagine</h3>
                         <h6>
                             <?= rand(20, 100) ?>

@@ -29,10 +29,10 @@ class UpdateComicRequest extends FormRequest
             'price' => 'required|min:0|numeric',
             'type' => 'required|max:255',
             'publisher' => 'required|max:255',
-            'release_date' => 'required|max:255',
+            'release_date' => 'required|date_format:Y-m-d',
             'author' => 'required|max:255',
             'description' => 'nullable',
-            'pages' => 'nullable|min:0|numeric',
+            'pages' => 'nullable|min:1|numeric',
             'rating' => 'nullable|decimal:1|min:0|max:5',
             'total_votes' => 'nullable|min:0|numeric',
         ];
@@ -59,7 +59,7 @@ class UpdateComicRequest extends FormRequest
             'publisher.max' => 'Il campo :attribute non deve superare i :max caratteri.',
 
             'release_date.required' => 'Il campo :attribute è obbligatorio.',
-            'release_date.max' => 'Il campo :attribute non deve superare i :max caratteri.',
+            'release_date.date_format' => 'Il campo :attribute non ha un formato valido. Deve essere del formato YYYY-MM-DD.',
 
             'author.required' => 'Il campo :attribute è obbligatorio.',
             'author.max' => 'Il campo :attribute non deve superare i :max caratteri.',

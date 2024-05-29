@@ -30,6 +30,10 @@
                         <h6>
                             {{ $comic->total_votes }}
                         </h6>
+                        <h4 class="mb-1">Data di Uscita</h4>
+                        <h6>
+                            {{ $comic->release_date }}
+                        </h6>
                         <div class="d-flex justify-content-center align-items-center gap-5 mt-auto">
                             <a href="{{ route('comics.index') }}">
                                 <i role="button" type="submit"
@@ -51,7 +55,7 @@
                     </div>
                 </div>
             </div>
+        </div>
     </main>
-    </div>
 
 @endsection

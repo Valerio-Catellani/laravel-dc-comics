@@ -12,7 +12,8 @@
                 <div class="mb-3 @error('series') err-animation @enderror">
                     <label for="series" class="form-label">Series</label>
                     <input type="text" class="form-control @error('series') is-invalid err-animation @enderror"
-                        id="series" name='series' value="{{ old('series', $comic->series) }}">
+                        id="series" name='series' value="{{ old('series', $comic->series) }}" required maxlength="255"
+                        minlength="3">
                     @error('series')
                         <div class="alert alert-danger">{{ $message }}</div>
                     @enderror
@@ -20,7 +21,7 @@
                 <div class="mb-3 @error('thumb') err-animation @enderror">
                     <label for="image" class="form-label">Image (URL)</label>
                     <input type="text" class="form-control @error('thumb') is-invalid err-animation @enderror"
-                        id="image" name='thumb' value="{{ old('thumb', $comic->thumb) }}">
+                        id="image" name='thumb' value="{{ old('thumb', $comic->thumb) }}" required maxlength="255">
                     @error('thumb')
                         <div class="alert alert-danger">{{ $message }}</div>
                     @enderror
@@ -28,7 +29,8 @@
                 <div class="mb-3 @error('price') err-animation @enderror">
                     <label for="price" class="form-label">Price ($)</label>
                     <input type="number" class="form-control @error('price') is-invalid err-animation @enderror"
-                        id="price" name='price' value="{{ old('price', str_replace('$', '', $comic->price)) }}">
+                        id="price" name='price' value="{{ old('price', str_replace('$', '', $comic->price)) }}"
+                        required min="0">
                     @error('price')
                         <div class="alert alert-danger">{{ $message }}</div>
                     @enderror
@@ -36,15 +38,17 @@
                 <div class="mb-3 @error('publisher') err-animation @enderror">
                     <label for="publisher" class="form-label">Publisher</label>
                     <input type="text" class="form-control @error('publisher') is-invalid err-animation @enderror"
-                        id="publisher" name='publisher' value="{{ old('publisher', $comic->publisher) }}">
+                        id="publisher" name='publisher' value="{{ old('publisher', $comic->publisher) }}" required
+                        maxlength="255">
                     @error('publisher')
                         <div class="alert alert-danger">{{ $message }}</div>
                     @enderror
                 </div>
                 <div class="mb-3 @error('release_date') err-animation @enderror">
                     <label for="release_date" class="form-label">Release Date</label>
-                    <input type="text" class="form-control @error('release_date') is-invalid err-animation @enderror"
-                        id="release_date" name='release_date' value="{{ old('release_date', $comic->release_date) }}">
+                    <input type="date" class="form-control @error('release_date') is-invalid err-animation @enderror"
+                        id="release_date" name='release_date' value="{{ old('release_date', $comic->release_date) }}"
+                        required>
                     @error('release_date')
                         <div class="alert alert-danger">{{ $message }}</div>
                     @enderror
@@ -52,7 +56,7 @@
                 <div class="mb-3 @error('author') err-animation @enderror">
                     <label for="author" class="form-label">Author</label>
                     <input type="text" class="form-control @error('author') is-invalid err-animation @enderror"
-                        id="author" name='author' value="{{ old('author', $comic->author) }}">
+                        id="author" name='author' value="{{ old('author', $comic->author) }}" required maxlength="255">
                     @error('author')
                         <div class="alert alert-danger">{{ $message }}</div>
                     @enderror
@@ -60,7 +64,7 @@
                 <div class="mb-3 @error('pages') err-animation @enderror">
                     <label for="pages" class="form-label">Pages</label>
                     <input type="number" class="form-control @error('pages') is-invalid err-animation @enderror"
-                        id="pages" name='pages' value="{{ old('pages', $comic->pages) }}">
+                        id="pages" name='pages' value="{{ old('pages', $comic->pages) }}" min="1">
                     @error('pages')
                         <div class="alert alert-danger">{{ $message }}</div>
                     @enderror
@@ -68,7 +72,8 @@
                 <div class="mb-3 @error('rating') err-animation @enderror">
                     <label for="rating" class="form-label">Rating</label>
                     <input type="text" class="form-control @error('rating') is-invalid err-animation @enderror"
-                        id="rating" name='rating' value="{{ old('rating', $comic->rating) }}">
+                        id="rating" name='rating' value="{{ old('rating', $comic->rating) }}" min="0"
+                        max="5" step="0.1">
                     @error('rating')
                         <div class="alert alert-danger">{{ $message }}</div>
                     @enderror
@@ -76,7 +81,8 @@
                 <div class="mb-3 @error('total_votes') err-animation @enderror">
                     <label for="total_votes" class="form-label">Total Votes</label>
                     <input type="text" class="form-control @error('total_votes') is-invalid err-animation @enderror"
-                        id="total_votes" name='total_votes' value="{{ old('total_votes', $comic->total_votes) }}">
+                        id="total_votes" name='total_votes' value="{{ old('total_votes', $comic->total_votes) }}"
+                        min="0">
                     @error('total_votes')
                         <div class="alert alert-danger">{{ $message }}</div>
                     @enderror

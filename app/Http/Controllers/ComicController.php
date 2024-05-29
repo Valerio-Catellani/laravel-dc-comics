@@ -5,6 +5,9 @@ namespace App\Http\Controllers;
 use App\Models\Comic;
 use Illuminate\Http\Request;
 use App\Functions\Helpers as Help;
+use App\Http\Requests\StoreComicRequest;
+use App\Http\Requests\UpdateComicRequest;
+use Illuminate\Support\Facades\Validator;
 
 class ComicController extends Controller
 {
@@ -38,9 +41,12 @@ class ComicController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(StoreComicRequest $request)
     {
-        $form_data = $request->all();
+        //validazione dati:
+
+        //$form_data = $this->validation($request->all());
+        $form_data = $request->validated();
         $form_data["price"] = '$' . $form_data["price"];
         $new_comic = new Comic();
         $new_comic->fill($form_data);
@@ -79,10 +85,10 @@ class ComicController extends Controller
      * @param  \App\Models\Comic  $comic
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(UpdateComicRequest $request, $id)
     {
         $comic_to_change = Comic::findOrFail($id);
-        $form_data = $request->all();
+        $form_data = $request->validated();
         $form_data["price"] = '$' . $form_data["price"];
         $comic_to_change->fill($form_data);
         $comic_to_change->update();

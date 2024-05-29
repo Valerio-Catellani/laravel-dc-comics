@@ -3,7 +3,7 @@
 @section('title', 'Comics')
 
 @section('content')
-    <main id="all-comics" class="text-white d-flex flex-column align-items-center justify-content-center ">
+    <main id="all-comics" class="text-white ">
         <div class="jumbotron-container">
             <img class="vw-100 img-fluid" src="{{ Vite::asset('resources/img/jumbotron.jpg') }}" alt="Jumbotron">
         </div>

@@ -2,13 +2,15 @@
     <div id="merchandising">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="merch-container d-flex align-items-center justify-content-center py-5 px-2">
+                <div class="merch-container d-flex align-items-center justify-content-center gap-5 flex-wrap py-5 px-2">
                     @foreach ($data['footerMenuLinks']['merchandaisingItems'] as $merch)
-                        <div class="img-container d-flex align-items-center justify-content-center mx-1">
-                            <img class="img-fluid h-100" src="{{ Vite::asset('resources/img/' . $merch['img']) }}"
-                                alt="{{ $merch['name'] }}">
+                        <div>
+                            <div class="img-container d-flex align-items-center justify-content-center mx-1">
+                                <img class="img-fluid h-100" src="{{ Vite::asset('resources/img/' . $merch['img']) }}"
+                                    alt="{{ $merch['name'] }}">
+                            </div>
+                            <h5>{{ strtoupper($merch['name']) }}</h5>
                         </div>
-                        <h5>{{ strtoupper($merch['name']) }}</h5>
                     @endforeach
                 </div>
             </div>

@@ -10,21 +10,23 @@ import.meta.glob([
 if (document.getElementById('element-delete')) {
   document.getElementById('element-delete').addEventListener('click', (event) => {
     event.preventDefault();
-    document.getElementById('hype-modal') ? '' : createModal();
+    const ElementId = document.getElementById('comic-details').getAttribute('data-element-id');
+    const ElementName = document.getElementById('comic-details').getAttribute('data-element-title');
+    document.getElementById('hype-modal') ? '' : createModal(ElementId, ElementName);
     const modale = document.getElementById('hype-modal');
     const myModal = new bootstrap.Modal(modale)
     myModal.show();
     const btnSave = modale.querySelector('.btn.btn-danger')
-    //console.log(btnSave);
+    //console.log(btnSave);ù
     btnSave.addEventListener('click', () => {
       console.log('ciao');
-      document.getElementById('delete-form').submit();
+      document.getElementById('element-delete').parentElement.submit();
     })
   })
 }
 
 
-function createModal() {
+function createModal(ElementId, ElementName) {
   const modal = document.createElement('div');
   modal.classList.add('modal', 'fade');
   modal.setAttribute('id', 'hype-modal');
@@ -34,11 +36,11 @@ function createModal() {
   let tmp = `<div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">Conferma cancellazione</h1>
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Cancellazione elemento: ${ElementName} - id: ${ElementId}</h1>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-            Sei sicuro di voler eliminare questo elemento?
+            Sei sicuro di voler eliminare l'elemento con id: ${ElementId} e titolo: ${ElementName}?
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No, torna indietro</button>

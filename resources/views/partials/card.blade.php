@@ -5,12 +5,12 @@
     <h5 class="mb-0 mt-2 text-black text-center">{{ strtoupper($comic->series) }}</h5>
     <div class='d-flex my-1'>
         <span>vote:</span>
-        <?php echo $comic->vote_tmp; ?>
+        {!! $comic->vote_tmp !!}
     </div>
     <p class="my-1">TYpe: {{ $comic->type }}</p>
     <div class="d-flex justify-content-center gap-4 mt-auto">
         <a class="text-decoration-none text-center text-secondary" href="{{ route('comics.show', $comic->id) }}">
-            <i role="button" class="fa-solid fa-circle-info fs-2  hype-hover-size"></i>
+            <i role="button" class="fa-solid fa-circle-info fs-2 hype-hover-size "></i>
         </a>
         <a class="text-decoration-none text-center text-warning" href="{{ route('comics.edit', $comic->id) }}">
             <i role="button" class="fa-solid fa-pen-to-square fs-2 hype-hover-size hype-text-shadow"></i>

@@ -16,7 +16,6 @@ $fa-font-path: "../webfonts" !default;
 
 body {
     font-family: $font-main;
-    height: 100vh;
 }
 
 .mine-element-color {
@@ -50,6 +49,29 @@ body {
     &:hover {
         transform: scale(1.2);
         transition: transform 0.3s ease-in-out;
+    }
+}
+
+.err-animation {
+    animation: shake 0.05s;
+    animation-iteration-count: 5;
+
+    @keyframes shake {
+        0% {
+            transform: translateX(0);
+        }
+        25% {
+            transform: translateX(5px);
+        }
+        50% {
+            transform: translateX(-5px);
+        }
+        75% {
+            transform: translateX(5px);
+        }
+        100% {
+            transform: translateX(0);
+        }
     }
 }
 
@@ -204,7 +226,8 @@ footer {
 
 main {
     background-color: $contact-background;
-    min-height: 100vh;
+    min-height: 110vh;
+    padding-bottom: 30px;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;

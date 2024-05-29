@@ -3,10 +3,11 @@
 @section('title', 'Create Comics')
 
 @section('content')
-    <main id="comic-details" style="background-image: url('{{ Vite::asset('resources/img/dc-heroes.jpg') }}')" class="pb-5">
-        <div class="container mine-background-color rounded-5 hype-shadow-white p-2 pb-4 mb-5">
+    <main id="comic-details" style="background-image: url('{{ Vite::asset('resources/img/dc-heroes.jpg') }}')" class="pb-5"
+        data-element-id="{{ $comic->id }}" data-element-title="{{ $comic->series }}">
+        <div class="container mine-background-color rounded-5 hype-shadow-white  p-2 pb-4 mb-5">
             <h1 class="text-center hype-text-shadow text-white display-3 fw-bolder">{{ $comic['series'] }}</h1>
-            <span class="fs-3 text-center d-block"><?php echo $comic->vote_tmp; ?></span>
+            <span class="fs-3 text-center d-block">{!! $comic->vote_tmp !!} </span>
             <div class="container">
                 <div class="row">
                     <div class="col-4">
